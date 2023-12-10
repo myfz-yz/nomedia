@@ -74,7 +74,8 @@ hhg=$(ls $(echo $a))
 echo $hhg
 arraya=(${hhg})
 lengtha=${#arraya}  
-#for ((i=0; i<${lengtha}; i++)); do 
+for ((i=0; i<${lengtha}; i++))
+do 
 for elements in "${arraya[@]}"; do
 echo $elements
 reggs=$(echo $$elements | grep "${stra}") 
